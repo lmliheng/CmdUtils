@@ -1,5 +1,5 @@
 # CmdUtils
-![img](https://img.shields.io/badge/Faster%20use-Linux-red)![img](https://img.shields.io/badge/Developed%20by-C-yellow)![img](https://img.shields.io/badge/Updata-more-orange)
+![img](https://img.shields.io/badge/Faster%20use-Linux-red)  ![img](https://img.shields.io/badge/Developed%20by-C-yellow)  ![img](https://img.shields.io/badge/Updata-more-orange)
 
 CmdUtils是一个用于查询和执行常用命令的命令行工具。它可以帮助用户快速查找和执行各种命令，提高工作效率
 
