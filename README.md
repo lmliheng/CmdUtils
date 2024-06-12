@@ -1,9 +1,9 @@
 # CmdUtils
 ![img](https://img.shields.io/badge/Faster%20use-Linux-red)  ![img](https://img.shields.io/badge/Developed%20by-C-yellow)  ![img](https://img.shields.io/badge/Updata-more-orange)
 
-CmdUtils是一个用于查询和执行常用命令的命令行工具。它可以帮助用户快速查找和执行各种命令，提高工作效率
+CmdUtils是一个用于查询和执行常用命令的命令行工具。它可以帮助用户快速查找和执行各种命令，提高工作效率🚡
 
-目前拥有`命令速查`，`集成自动化脚本`，`一键安装脚本`，`代码统计`等高级功能
+目前拥有`🚡命令速查`，`🥇集成自动化脚本`，`👩‍🦲一键安装脚本`，`🧮代码统计`等高级功能
 
 **注意仅适用于`linux centos 7.x`**
 
@@ -37,12 +37,12 @@ cil l * :支持exam——————登录自动执行功能
 ```
 
 ## 编译
-如果您要修改代码则可修改后编译运行
+如果您要修改代码则可修改后编译运行👽
 ```bash
 make
 ```
 
 # 贡献
-如果您发现任何错误或想要添加新功能，请随时提交`issue`或`pull request`
+🧑如果您发现任何错误或想要添加新功能，请随时提交`issue`或`pull request`
 # 许可证
 CmdUtils采用`MIT`许可证。
