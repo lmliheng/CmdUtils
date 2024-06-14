@@ -7,7 +7,7 @@ all: $(OBJFILES) $(TARGET)
 
 .PHONY: objs
 objs:
-    mkdir -p objs
+	mkdir -p objs
 
 objs/bootstrap.o: src/bootstrap.c includes/*.h
 	$(CC) $(CFLAGS) -c $< -o $@
