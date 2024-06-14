@@ -5,6 +5,7 @@ TARGET = cil
 
 all: $(OBJFILES) $(TARGET)
 
+.PHONY: objs
 objs:
     mkdir -p objs
 
