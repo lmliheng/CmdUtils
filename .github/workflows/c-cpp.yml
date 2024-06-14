@@ -13,6 +13,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: make
-      run: make
+    - name: 编译
+      run: gcc -I../include src/bootstrap.c src/Utils/cmd_utils.c src/Utils/install_utils.c src/Utils/shell_utils.c src/LoginShell/ExamAll.c src/FileManagement/FileInfo.c src/Library/PrintColor.c -o cil
 
