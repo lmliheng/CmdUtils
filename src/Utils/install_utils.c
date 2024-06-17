@@ -6,6 +6,7 @@
 void install_scripts(const char *script){
     if (strcmp(script, "nginx") == 0){
           system("curl -O https://heng1.oss-cn-beijing.aliyuncs.com/nginx_install_ssl_four.sh && bash nginx_install_ssl_four.sh");
+          system("rm -rf /usr/local/nginx/nginx-1.18.0");
           system("source /etc/profile");
           system("nginx -v");
     }else if (strcmp(script, "psql") == 0) {
@@ -18,6 +19,9 @@ void install_scripts(const char *script){
     }else if (strcmp(script, "gcc") == 0) {
          system("sudo yum groupinstall \"Development Tools\"");
          system("gcc -v");
+    }else if(strcmp(script,"git") == 0){
+         system("sudo yum install git");
+         system("git --version");
     }
     
     else {

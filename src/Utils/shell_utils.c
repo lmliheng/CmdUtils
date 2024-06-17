@@ -16,8 +16,11 @@ void shell_scripts(const char *script){
           system("free -h");
     }else if(strcmp(script, "system") == 0){
           system("uname -a");
-    }        
-    
+    }else if(strcmp(script, "cil") == 0){
+          system("sudo cp cil /bin");     
+          printf("\033[1;34mcil已全局可使用\033[0m\n");
+          
+    }
     else {
     printf("\033[1;31mCmdUtils的shell功能暂不支持该参数\033[0m\n");
     }

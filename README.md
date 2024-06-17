@@ -28,12 +28,12 @@ cil
 终端输出如下
 ```bash
 用法:cil (<参数>) <命令名>
-例如:cil nginx
+例如:cil i nginx 安装中间件Nginx
 cil * :支持nginx,psql(PostgreSQL),pro(进程检查命令),exe(可执行文件操作),base(基础linux检查)——————提示功能
-cil i * :支持nginx,psql,nvm,cloc——————安装功能
-cil s * :支持env——————shell功能
-cil f * :支持该目录下文件或目录名——————文件类型检查功能
-cil l * :支持exam——————登录自动执行功能
+cil i * :支持nginx,psql,nvm,cloc,gcc,git——————安装功能
+cil s * :支持cil(配置全局变量),env,banner,exam,cpu,free,system——————shell功能
+cil f * :支持exam(目录检查),info(目录下所有文件检查),nginx,psql——————文件类型检查功能
+cil l * :支持exam??????登录自动执行功能
 ```
 
 ## 编译

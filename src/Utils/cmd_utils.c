@@ -9,9 +9,8 @@ void show_command_usage(const char *command) {
         printf("\033[1;34m1. 查看Nginx版本：nginx -v\033[0m\n");
         printf("\033[1;34m2. 检查Nginx配置文件：nginx -t\033[0m\n");
         printf("\033[1;34m3. 重启Nginx：sudo systemctl restart nginx \033[0m\n");
-        printf("\033[1;34m4. 停止Nginx：sudo nginx -s stop\033[0m\n");
-        printf("\033[1;34m5. 重新加载配置文件：sudo nginx -s reload\033[0m\n");
-        printf("\033[1;34m6. 一键安装nginx(centos 7.x适用)：curl -O https://heng1.oss-cn-beijing.aliyuncs.com/nginx_install_three.sh && bash nginx_install_three.sh\033[0m\n");
+        printf("\033[1;34m4. 停止Nginx：sudo systemctl stop nginx\033[0m\n");
+        printf("\033[1;34m6. 检查日志:cat /usr/local/nginx/logs/error.logz或者access.log\033[0m\n");
     } else if (strcmp(command, "psql") == 0) {
         printf("\033[1;34mPostgreSQL常用命令：\033[0m\n");
         printf("\033[1;34m1. 登录：(1)系统登录：sudo su - postgres (2)远程登录：psql -U postgres -h localhost -p 5432\033[0m\n");
