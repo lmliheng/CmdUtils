@@ -37,7 +37,9 @@ void show_command_usage(const char *command) {
         printf("\033[1;34m6. 查看磁盘信息：df -h\033[0m\n");
         printf("\033[1;34m7. 系统语系检查:localectl\033[0m\n");
         printf("\033[1;34m8. 欢迎语设置:vim /etc/motd\033[0m\n");
-    } else {
+    }else if (strcmp(command, "updata") == 0) {  // 增加的updata命令
+    }else if (strcmp(command, "version") == 0) {  // 增加的updata命令
+    }else {
         printf("\033[1;31mCmdUtils的提示功能暂不支持命令%s\033[0m\n", command);
     }
 }
