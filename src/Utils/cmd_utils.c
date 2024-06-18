@@ -1,11 +1,14 @@
 #include "../../includes/cmd_utils.h"
+#include "PrintColor.h"
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
 
 void show_command_usage(const char *command) {
     if (strcmp(command, "nginx") == 0) {
-        printf("\033[1;34mNginx常用命令：\033[0m\n");
+
+        color_printf(cyan,"Nginx常用命令:\n");
         printf("\033[1;34m1. 查看Nginx版本：nginx -v\033[0m\n");
         printf("\033[1;34m2. 检查Nginx配置文件：nginx -t\033[0m\n");
         printf("\033[1;34m3. 重启Nginx：sudo systemctl restart nginx \033[0m\n");

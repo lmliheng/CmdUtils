@@ -1,13 +1,20 @@
 #include <stdio.h>
 #include <string.h>
+
+
+#include "PrintColor.h" // 静态链接库
+
 #include "../includes/cmd_utils.h"
 #include "../includes/install_utils.h"
 #include "../includes/shell_utils.h"
 #include "../includes/ExamAll.h"
 #include "../includes/FileInfo.h"
-#include "../includes/PrintColor.h"
 #include "../includes/updata_utils.h"
 #include "../includes/Version.h"
+
+
+
+// 也许需要一个系统匹配版本调度程序
 
 
 
@@ -53,5 +60,3 @@ int main(int argc, char *argv[]) {
     return 0;
 }
 
-// 编译：gcc -I../include src/bootstrap.c src/Utils/cmd_utils.c src/Utils/install_utils.c src/Utils/shell_utils.c src/Utils/updata_utils.c src/LoginShell/ExamAll.c src/FileManagement/FileInfo.c src/Library/PrintColor.c src/Library/Version.c -o cil
-// 注意：确保在编译时包含install_utils.c，因为install_scripts函数定义在此文件中。
