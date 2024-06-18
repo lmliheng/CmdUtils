@@ -14,4 +14,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: 编译
-      run: gcc -I./includes -Wall -c src/bootstrap.c src/Utils/cmd_utils.c src/Utils/install_utils.c src/Utils/shell_utils.c src/LoginShell/ExamAll.c src/FileManagement/FileInfo.c src/Utils/updata_utils.c src/Utils/Version.c src/Library/PrintColor.c -o objs/bootstrap.o objs/cmd_utils.o objs/install_utils.o objs/shell_utils.o objs/ExamAll.o objs/FileInfo.o objs/updata_utils.o objs/Version.o objs/PrintColor.o && cd lib && ar rcs libprintcolor.a ../objs/PrintColor.o && gcc objs/bootstrap.o objs/cmd_utils.o objs/install_utils.o objs/shell_utils.o objs/ExamAll.o objs/FileInfo.o objs/updata_utils.o objs/Version.o -o cil -L./lib -lprintcolor
+      run: make
