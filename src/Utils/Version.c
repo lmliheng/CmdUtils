@@ -1,4 +1,6 @@
 #include "../../includes/Version.h"
+
+
 #include<stdio.h>
 #include<string.h>
 
@@ -11,6 +13,7 @@ void print_version(const char *script){
 
     // 使用printf函数打印版本号
         printf("当前版本是: %s\n", version);
+
     }
 
 }

@@ -1,4 +1,6 @@
 #include "../../includes/shell_utils.h"
+#include "PrintColor.h"
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
@@ -18,11 +20,10 @@ void shell_scripts(const char *script){
           system("uname -a");
     }else if(strcmp(script, "cil") == 0){
           system("sudo cp cil /bin");     
-          printf("\033[1;34mcil已全局可使用\033[0m\n");
-          
+          color_printf(cyan,"cil已全局可使用\n");          
     }
     else {
-    printf("\033[1;31mCmdUtils的shell功能暂不支持该参数\033[0m\n");
+          color_printf(red,"CmdUtils的shell功能暂不支持该参数\n"); 
     }
 
 }

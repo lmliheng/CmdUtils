@@ -32,10 +32,12 @@ int main(int argc, char *argv[])
 
         // 设置写回调函数，将数据写入文件
         FILE *fp = fopen("output", "wb");
+
         if (!fp)
         {
             perror("Failed to open file");
             return 1;
+            
         }
         curl_easy_setopt(curl, CURLOPT_WRITEFUNCTION, write_data);
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, fp);

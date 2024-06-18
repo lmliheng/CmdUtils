@@ -1,4 +1,6 @@
 #include "../../includes/install_utils.h"
+#include "PrintColor.h"
+
 #include<stdio.h>
 #include<string.h>
 #include<stdlib.h>
@@ -26,7 +28,7 @@ void install_scripts(const char *script){
          system("sudo yum install git");
          system("git --version");
     }else {
-    printf("\033[1;31mCmdUtils的安装功能暂不支持该软件\033[0m\n");
+         color_printf(red,"CmdUtils的安装功能暂不支持该软件\n");    
     }
 
 }
