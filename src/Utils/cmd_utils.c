@@ -47,6 +47,8 @@ void show_command_usage(const char *command) {
                                                         
     }else if (strcmp(command, "updata") == 0) {  // 增加的updata命令
     }else if (strcmp(command, "version") == 0) {  // 增加的updata命令
+    }else if (strcmp(command, "sl") == 0) {  // 增加的sl命令
+    
     }else {
         color_printf(cyan,"CmdUtils的提示功能暂不支持命令\n");         
     }

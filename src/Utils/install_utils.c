@@ -22,10 +22,10 @@ void install_scripts(const char *script){
     }else if (strcmp(script, "cloc") == 0) {
          system("sudo yum install epel-release -y && sudo yum install cloc -y");
     }else if (strcmp(script, "gcc") == 0) {
-         system("sudo yum groupinstall \"Development Tools\"");
+         system("sudo yum groupinstall \"Development Tools\" -y");
          system("gcc -v");
     }else if(strcmp(script,"git") == 0){
-         system("sudo yum install git");
+         system("sudo yum install git -y");
          system("git --version");
     }else {
          color_printf(red,"CmdUtils的安装功能暂不支持该软件\n");    
