@@ -50,6 +50,6 @@ void show_command_usage(const char *command) {
     }else if (strcmp(command, "sl") == 0) {  // 增加的sl命令
     
     }else {
-        color_printf(cyan,"CmdUtils的提示功能暂不支持命令\n");         
+        color_printf(red,"CmdUtils的提示功能暂不支持命令\n");         
     }
 }
