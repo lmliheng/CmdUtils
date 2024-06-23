@@ -20,7 +20,8 @@ void shell_scripts(const char *script){
     }else if(strcmp(script, "system") == 0){
           system("uname -a");
     }else if(strcmp(script, "cil") == 0){
-          system("sudo cp cil /bin");     
+          system("sudo cp cil /bin");
+          system("rm -f cil");    
           color_printf(cyan,"cil已全局可使用\n");          
     }
     else {

@@ -5,8 +5,6 @@ TARGET = cil
 LIBTARGET = lib/libprintcolor.a
 LIBOBJS = objs/PrintColor.o
 
-
-
 all: $(TARGET)
 
 objs:
@@ -17,7 +15,7 @@ objs/PrintColor.o: src/Library/PrintColor.c objs
 
 $(LIBTARGET): $(LIBOBJS)
 	@mkdir -p lib
-	cd lib && $(AR) rcs $(notdir $(LIBTARGET)) ../$(LIBOBJS)
+	$(AR) rcs $(LIBTARGET) $(LIBOBJS)
 
 objs/bootstrap.o: src/bootstrap.c objs
 	$(CC) $(CFLAGS) -c $< -o $@
@@ -46,10 +44,10 @@ objs/Version.o: src/Utils/Version.c objs
 objs/sl.o: src/game/sl.c objs
 	$(CC) $(CFLAGS) -c $< -o $@
 
-
-
 $(TARGET): $(OBJFILES) $(LIBTARGET) 
 	$(CC) $(CFLAGS) -pie $(OBJFILES) -o $(TARGET) -L./lib -lprintcolor -lncurses
 
 clean:
-	rm -f $(OBJFILES) $(TARGET) $(LIBTARGET) 
+	rm -f $(OBJFILES) $(TARGET) $(LIBTARGET)
+
+
