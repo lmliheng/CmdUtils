@@ -12,6 +12,7 @@
 #include "../includes/updata_utils.h"
 #include "../includes/Version.h"
 #include "../includes/sl.h"
+#include "../includes/print_figlet.h"
 
 
 
@@ -30,6 +31,7 @@ int main(int argc, char *argv[]) {
         color_printf(cyan,"cil s * :支持cil,env,banner,exam,cpu,free,system——————shell功能\n");
         color_printf(cyan,"cil f * :支持exam(目录检查),info(目录下所有文件检查),nginx,psql——————文件类型检查功能\n");
         color_printf(cyan,"cil l * :支持exam——————登录自动执行功能\n");
+        print_figlet("cmdutils");
 
 
         return 1;

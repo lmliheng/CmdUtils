@@ -1,6 +1,6 @@
 CC = gcc
 CFLAGS = -I./includes -Wall -fPIC
-OBJFILES = objs/bootstrap.o objs/cmd_utils.o objs/install_utils.o objs/shell_utils.o objs/ExamAll.o objs/FileInfo.o objs/updata_utils.o objs/Version.o objs/sl.o
+OBJFILES = objs/bootstrap.o objs/cmd_utils.o objs/install_utils.o objs/shell_utils.o objs/ExamAll.o objs/FileInfo.o objs/updata_utils.o objs/Version.o objs/sl.o objs/print_figlet.o
 TARGET = cil
 LIBTARGET = lib/libprintcolor.a
 LIBOBJS = objs/PrintColor.o
@@ -43,6 +43,11 @@ objs/Version.o: src/Utils/Version.c objs
 
 objs/sl.o: src/game/sl.c objs
 	$(CC) $(CFLAGS) -c $< -o $@
+
+objs/print_figlet.o: src/Utils/print_figlet.c objs
+	$(CC) $(CFLAGS) -c $< -o $@	
+
+
 
 $(TARGET): $(OBJFILES) $(LIBTARGET) 
 	$(CC) $(CFLAGS) -pie $(OBJFILES) -o $(TARGET) -L./lib -lprintcolor -lncurses

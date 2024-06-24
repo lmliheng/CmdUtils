@@ -9,7 +9,7 @@ void print_version(const char *script){
     if (strcmp(script, "version") == 0){
 
 
-        char version[] = "3.30";
+        char version[] = "3.40";
 
     // 使用printf函数打印版本号
         printf("当前版本是: %s\n", version);
