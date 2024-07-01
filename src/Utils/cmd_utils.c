@@ -26,12 +26,16 @@ void show_command_usage(const char *command) {
         color_printf(cyan,"1. 检查端口:netstat -tuln | grep 80或者ps aux | grep 80\n");
         color_printf(cyan,"2. 检查资源:free -h\n");                        
 
-    } else if (strcmp(command, "exe") == 0) {
+    } else if (strcmp(command, "service") == 0) {
         color_printf(cyan,"可执行文件常用命令:\n");
         color_printf(cyan,"1. 添加可执行权限:chmod +x \n");
         color_printf(cyan,"2. 编辑软链接文件:vim /etc/profile\n");
         color_printf(cyan,"3. 写入链接:export PATH=$PATH:/usr/local/nginx/sbin\n");
-        color_printf(cyan,"4. 激活软链接:source /etc/profile\n");                                
+        color_printf(cyan,"4. 激活软链接:source /etc/profile\n");   
+        color_printf(cyan,"5. 编辑systemd 服务文件:sudo vim /etc/systemd/system/example.service\n");
+        color_printf(cyan,"6. 重新加载 systemd 配置:sudo systemctl daemon-reload\n");
+        color_printf(cyan,"7. 启动服务:sudo systemctl start example\n");
+        color_printf(cyan,"8. 检查状态:sudo systemctl status example\n");                             
 
 
     } else if (strcmp(command, "base") == 0) {

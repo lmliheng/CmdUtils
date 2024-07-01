@@ -26,7 +26,7 @@ int main(int argc, char *argv[]) {
         color_printf(cyan,"用法:cil (<参数>) <命令名>\n");
         color_printf(cyan,"例如:cil i nginx 安装中间件Nginx\n");
         color_printf(cyan,"cil version/updata :检查当前版本以及版本更新\n");
-        color_printf(cyan,"cil * :支持nginx,psql(PostgreSQL),pro(进程检查命令),exe(可执行文件操作),base(基础linux检查),sl——————提示以及更新功能\n");
+        color_printf(cyan,"cil * :支持nginx,psql(PostgreSQL),pro(进程检查命令),service(可执行文件操作),base(基础linux检查),sl——————提示以及更新功能\n");
         color_printf(cyan,"cil i * :支持nginx,psql,nvm,cloc,gcc,git——————安装功能\n");
         color_printf(cyan,"cil s * :支持cil,env,banner,exam,cpu,free,system——————shell功能\n");
         color_printf(cyan,"cil f * :支持exam(目录检查),info(目录下所有文件检查),nginx,psql——————文件类型检查功能\n");
