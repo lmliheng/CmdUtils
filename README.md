@@ -47,5 +47,11 @@ make
 
 # 贡献
 🧑如果您发现任何错误或想要添加新功能，请随时提交`issue`或`pull request`
+
+<a href="https://github.com/lmliheng/CmdUtils/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=lmliheng/CmdUtils" />
+</a>
+
+Made with [contrib.rocks](https://contrib.rocks).
 # 许可证
 CmdUtils采用`MIT`许可证。
